@@ -30,6 +30,7 @@ module.exports = (env, argv) => {
             minimize: isProd
         },
         devServer: {
+            disableHostCheck: true,
             static: [
                 {
                     directory: path.resolve(__dirname, 'static'),
@@ -38,8 +39,7 @@ module.exports = (env, argv) => {
             ],
             compress: true,
             hot: true,
-            port: 8081,
-            allowedHost: 'all'
+            port: 8080,
         },
         resolve: {
             extensions: [".mjs", ".js", ".jsx"],
