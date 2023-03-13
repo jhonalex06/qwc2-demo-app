@@ -38,7 +38,8 @@ module.exports = (env, argv) => {
             ],
             compress: true,
             hot: true,
-            port: 8080
+            port: 8081,
+            allowedHost: 'all'
         },
         resolve: {
             extensions: [".mjs", ".js", ".jsx"],
