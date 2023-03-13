@@ -30,7 +30,7 @@ module.exports = (env, argv) => {
             minimize: isProd
         },
         devServer: {
-            disableHostCheck: true,
+            allowedHosts: 'all',
             static: [
                 {
                     directory: path.resolve(__dirname, 'static'),
